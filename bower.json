@@ -1,0 +1,24 @@
+{
+  "name": "asciipotter.com",
+  "homepage": "https://asciipotter.com",
+  "authors": [
+    "Martin Wessely <martin@wesse.ly>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "clipboard": "^1.5.12",
+    "isMobile": "^0.4.0"
+  }
+}

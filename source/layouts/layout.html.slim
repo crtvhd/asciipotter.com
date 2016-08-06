@@ -1,0 +1,16 @@
+doctype html
+html.no-js
+  head
+    = partial "/shared/head"
+
+  body class=page_classes
+    #fb-root
+
+    .app-container
+      = partial "/shared/header"
+      main.app-content= yield
+      = partial "/shared/footer"
+
+    = partial "/shared/analytics"
+
+    = javascript_include_tag :application

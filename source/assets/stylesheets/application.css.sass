@@ -1,0 +1,86 @@
+$light-gray: #444
+$dark-gray: #222
+
+=typo
+  color: $light-gray
+  text-decoration: none
+  text-transform: uppercase
+  letter-spacing: .05rem
+  font-size: .8rem
+
+@import "bourbon"
+@import "neat"
+
+@import "reset"
+@import "app/*"
+
+html, body
+  height: 100%
+
+body
+  background-color: white
+  color: $light-gray
+  font-family: 'Karla', sans-serif
+  -webkit-font-smoothing: antialiased
+
+a
+  color: $dark-gray
+  text-decoration: underline
+
+  &:hover,
+  &:focus
+    text-decoration: underline
+
+.c-ascii
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.c-icon
+  max-width: 18rem
+  font-size: 5rem
+  padding: 0
+  line-height: 2
+  border: none
+  color: #333
+  text-align: center
+  text-indent: 0
+  letter-spacing: 0
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+
+  .is--chrome.is--mac &
+    text-indent: -5rem
+    letter-spacing: -3.5rem
+
+  .is--firefox.is--mac &
+    text-indent: 1.5rem
+
+  &:focus
+    outline: none
+
+
+.c-button
+  width: 14rem
+  padding: 1rem 1.5rem
+  font-weight: 500
+  text-transform: uppercase
+  font-size: .75rem
+  letter-spacing: .1rem
+  border: 0
+  background: #f3f3f3
+
+  &:focus
+    outline: none
+
+.c-list
+  display: flex
+  justify-content: center
+  margin: .5rem -1rem -.5rem
+  padding: 0
+  list-style: none
+
+.c-list__item
+  margin: .5rem
+
+.o-container
+  padding: 0 2rem
